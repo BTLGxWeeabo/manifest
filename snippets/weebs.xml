@@ -82,6 +82,6 @@
   <project path="system/vold" name="system_vold" remote="weebs" />
 
   <!-- Vendor -->
-  <project path="vendor/weebs" name="vendor_weebs" remote="weebs" />
+  <project path="vendor/bootleggers" name="vendor_bootleggers" remote="weebs" />
 
 </manifest>
