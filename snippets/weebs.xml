@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="weebs"
+           fetch="https://github.com/BTLGxWeeabo"
+           revision="refs/heads/queso" />
+
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/" />
+
+  <!-- General -->
+  <project path="bionic" name="bionic" remote="weebs" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="weebs" />
+  <project path="manifest" name="manifest" remote="weebs" />
+
+  <!-- Build -->
+  <project path="build/make" name="build" remote="weebs">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/blueprint" name="build_blueprint" remote="weebs" />
+  <project path="build/soong" name="build_soong" remote="weebs">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Device -->
+  <project path="device/bootleg/sepolicy" name="device_bootleg_sepolicy" remote="weebs" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="weebs" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy" remote="weebs" revision="queso-legacy-um"/>
+  <project path="device/qcom/sepolicy-legacy" name="device_qcom_sepolicy" remote="weebs" revision="queso-legacy"/>
+
+  <!-- External -->
+  <project path="external/asus/stitchimage" name="external_asus_stitchimage" remote="weebs" />
+  <project path="external/tinycompress" name="external_tinycompress" remote="weebs" />
+
+  <!-- Hardware -->
+  <project path="hardware/bootleg/interfaces" name="hardware_bootleg_interfaces" remote="weebs" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="weebs" />
+
+  <!-- Framework -->
+  <project path="frameworks/av" name="frameworks_av" remote="weebs" />
+  <project path="frameworks/base" name="frameworks_base" remote="weebs" />
+  <project path="frameworks/native" name="frameworks_native" remote="weebs" />
+
+  <!-- Prebuilts -->
+  <project path="prebuilts/tools-bootleg" name="prebuilts_tools-bootleg" remote="weebs" clone-depth="1" />
+
+  <!-- Packages repos -->
+  <project path="packages/apps/BootlegDumpster" name="packages_apps_BootlegDumpster" remote="weebs" />
+  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="weebs" />
+  <project path="packages/apps/Jelly" name="packages_apps_Jelly" remote="weebs" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="weebs" />
+  <project path="packages/apps/Phonograph" name="packages_apps_Phonograph" remote="weebs" />
+  <project path="packages/apps/OmniStyle" name="packages_apps_OmniStyle" remote="weebs" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="weebs" />
+  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="weebs" />
+  <project path="packages/apps/ShishufiedWalls" name="packages_apps_ShishufiedWalls" remote="weebs" />
+  <project path="packages/apps/SimIcons" name="simrat39/icon-pack" remote="github" revision="master" />
+  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="weebs" />
+  <project path="packages/apps/Nekopoi" name="packages_apps_Nekopoi" remote="weebs"
+  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="weebs" />
+  <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="weebs" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="weebs" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="weebs" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="weebs" />
+  <project path="packages/overlays/Shishufied" name="packages_overlays_Shishufied" remote="weebs" />
+
+  <!-- System -->
+  <project path="system/bt" name="system_bt" remote="weebs" />
+  <project path="system/core" name="system_core" remote="weebs" />
+  <project path="system/netd" name="system_netd" remote="weebs" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="weebs" />
+  <project path="system/vold" name="system_vold" remote="weebs" />
+
+  <!-- Vendor -->
+  <project path="vendor/weebs" name="vendor_weebs" remote="weebs" />
+
+</manifest>
