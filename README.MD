@@ -1,4 +1,5 @@
-BTLG x Weeaob | Onichann (Android 10) sources
+========
+BTLG x Weeabo | Onichann (Android 10) sources
 ========
 
 To initialize your local repository, use this command:
@@ -9,9 +10,7 @@ Then, be sure to add your device manifest in your local_manifests folder and fin
 
 	repo sync --current-branch --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune -jx
 	(the x on jx it's the amount of cores you have)
-
-Also, just in case something went wrong for our side, or from your manifest or whatever, just add a `-q` in your repo sync command to see less lines and get into the issue more easily.
-
+	
 When everything is done, be sure to shishufy your device (prepare it with the bootleg.mk file and bootleg_device product and stuff, that generic thing) and then when you're ready you can:
 
 	source build/envsetup.sh
@@ -19,16 +18,6 @@ When everything is done, be sure to shishufy your device (prepare it with the bo
 	mka bacon -jxxxxx
 	
 	(where it says device, it's your device codename. And you can use mka bacon ~~or mka bootleg~~, it's all up to you.)
-
-
-Also, as another sidenote: This is explained on the updater-script but just to clarify: Unshishufied builds are UNOFFICIAL.
-
-
-Help from other devices
------------------------
-
-If you got some commits missing for us, let us know on our telegram chat. Everything else, it's up to you at the time of building.
-
 
 Thanks section
 --------------
