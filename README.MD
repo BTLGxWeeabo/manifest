@@ -1,4 +1,3 @@
-========
 BTLG x Weeabo | Onichann (Android 10) sources
 ========
 
@@ -52,3 +51,4 @@ Here's my thanks to people who made this possible:
 * ArrowOS
 * BlissROMs
 * The Memedo Testers team
+* The weeabo.ppl
