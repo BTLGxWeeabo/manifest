@@ -66,7 +66,7 @@
   <project path="packages/apps/ShishufiedWalls" name="packages_apps_ShishufiedWalls" remote="weebs" />
   <project path="packages/apps/SimIcons" name="simrat39/icon-pack" remote="github" revision="master" />
   <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="weebs" />
-  <project path="packages/apps/Nekopoi" name="packages_apps_Nekopoi" remote="weebs"
+  <project path="packages/apps/Nekopoi" name="packages_apps_Nekopoi" remote="weebs" />
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="weebs" />
   <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="weebs" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="weebs" />
