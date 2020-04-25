@@ -45,6 +45,8 @@
   <!-- Hardware -->
   <project path="hardware/bootleg/interfaces" name="hardware_bootleg_interfaces" remote="weebs" />
   <project path="hardware/interfaces" name="hardware_interfaces" remote="weebs" />
+  <project path="hardware/qcom-caf/msm8998/display" name="android_hardware_qcom-caf_display" remote="weebs" revision="ten-caf-msm8998" />
+  <project path="hardware/qcom-caf/msm8996/display" name="android_hardware_qcom-caf_display" remote="weebs" revision="ten-caf-msm8996" />
 
   <!-- Framework -->
   <project path="frameworks/av" name="frameworks_av" remote="weebs" />
