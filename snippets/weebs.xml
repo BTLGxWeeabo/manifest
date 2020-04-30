@@ -5,6 +5,10 @@
            fetch="https://github.com/BTLGxWeeabo"
            revision="refs/heads/queso" />
 
+  <remote  name="xyzuan"
+           fetch="https://gitlab.com/xyzuan"
+           revision="ten" />
+
   <remote  name="github"
            fetch="https://github.com/" />
 
@@ -85,5 +89,6 @@
 
   <!-- Vendor -->
   <project path="vendor/bootleggers" name="vendor_bootleggers" remote="weebs" />
+  <project path="vendor/gms" name="vendor_gapps" remote="xyzuan" clone-depth="1" />
 
 </manifest>
