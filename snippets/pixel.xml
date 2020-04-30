@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="pixel"
+          fetch="https://github.com/PixelExperience"
+          revision="ten"
+          review="gerrit.pixelexperience.org" />
+
+  <remote name="pixel-devices"
+          fetch="https://github.com/PixelExperience-Devices"
+          revision="ten" />
+
+  <remote name="pixel-gitlab"
+          fetch="https://gitlab.com/PixelExperience"
+          revision="ten" />
+
+  <remote name="gitlab"
+          fetch="https://gitlab.com" />
+
+  <!-- Vendor Repos -->
+  <project path="vendor/gms" name="vendor_gapps" remote="pixel-gitlab" clone-depth="1" />
+
+</manifest>
